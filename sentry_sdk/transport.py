@@ -176,6 +176,7 @@ class HttpTransport(Transport):
             str(self._auth.get_api_url(endpoint_type)),
             body=body,
             headers=headers,
+            verify=False,
         )
 
         try:
